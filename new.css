@@ -1,18 +1,18 @@
 #grid ol {
-  color:lightblue;
-  border-right: 1px solid black;
+  color:lightgreen;
+  border-right: 1px solid white;
   width:120px;
   margin: 0;
   padding: 30px;
 }
 ol a {
-  color:lightblue;
+  color:lightgreen;
   text-decoration:none;
 }
 h1 {
   font-size:50px;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid white;
   margin:0;
   padding: 30px;
 }
@@ -24,13 +24,23 @@ h1 {
   padding: 10px;
 }
 .active {
-  color: blue;
+  color:yellow;
 }
 a {
-  color: black;
+  color: white;
 }
 h1 a {
   text-decoration: none;
+}
+h1{
+  background-color:black;
+}
+#grid ol{
+  background-color:black;
+}
+body{
+  background-color:black;
+  color:white;
 }
 @media(max-width:600px){
   #grid{
