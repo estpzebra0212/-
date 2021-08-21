@@ -3,17 +3,49 @@
   <head>
     <title>정유찬에 대하여</title>
     <meta charset="utf-8">
+    <style>
+
+    #grid ol {
+      color:lightblue;
+      border-right: 1px solid black;
+      width:120px;
+      margin: 0;
+      padding: 30px;
+    }
+    a {
+      color:lightblue;
+      text-decoration:none;
+    }
+    h1 {
+      font-size:60px;
+      text-align: center;
+      border-bottom: 1px solid black;
+      margin:0;
+      padding: 30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 200px auto;
+    }
+    #dd {
+      padding: 10px;
+    }
+    .active {
+      color: blue;
+    }
+    </style>
   </head>
   <body>
-    <h1><a href="index.html">정유찬,&nbsp;그는 누구인가?</a></h1>
-    <hr>
+    <h1><a href="index.html" style="color:pink"><ins>정유찬</ins>,&nbsp;그는 누구인가?</a></h1>
+    <div id="grid">
     <ol>
-      <li><a href="5.html">그의 생애</a></li>
+      <li class="active"><a href="5.html" class="active">그의 생애</a></li>
       <li><a href="1.html">그의 키</a></li>
       <li><a href="2.html">그의 몸무게</a></li>
       <li><a href="3.html">그의 특기</a></li>
       <li><a href="4.html">그의 코딩</a></li>
     </ol>
+    <div id="dd">
     <h3>그의 생애</h3>
     <p>그는 2007년 2월 12일 어느 마산의 한 집에서 태어났다.
       <br> 5살 때 <a href="https://map.naver.com/v5/entry/place/15306051?c=14305348.2415091,4200200.8397796,13,0,0,0,dh&placePath=%2Fhome%3Fentry=plt" target="_blank">동양 스포츠 어린이집</a>에 진학했다.
@@ -22,5 +54,7 @@
       <br> 현동초등학교에서 6학년까지의 교육 과정을 이수하고 근거리에 위치한 <a href="http://msgusan-m.gne.go.kr/msgusan-m/main.do" target="_blank">구산중학교</a>로 진학을 한다.
       <br> 배치고사에서 좋은 성적을 거두어 장학금을 수령한다.
     </p>
+    </div>
+  </div>
   </body>
 </html>
