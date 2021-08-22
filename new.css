@@ -52,6 +52,10 @@ body {
 .selected {
   color:white;
 }
+.pupple {
+  color:#800080
+}
+
 @media(max-width:600px){
   #grid{
     display:block;
