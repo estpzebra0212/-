@@ -1,18 +1,16 @@
-#grid ol {
-  color:lightgreen;
-  border-right: 1px solid white;
+#grid ol {;
+  border-right: 1px solid black;
   width:120px;
   margin: 0;
   padding: 30px;
 }
 ol a {
-  color:lightgreen;
   text-decoration:none;
 }
 h1 {
   font-size:50px;
   text-align: center;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
   margin:0;
   padding: 30px;
 }
@@ -27,19 +25,31 @@ h1 {
   color:yellow;
 }
 a {
-  color: white;
+  color: black;
 }
 h1 a {
   text-decoration: none;
 }
-h1{
-  background-color:black;
+body {
+  background-color:white;
+  color:black;
 }
-#grid ol{
-  background-color:black;
+.red {
+  color:red;
 }
-body{
-  background-color:black;
+.orange {
+  color:orange;
+}
+.yellow {
+  color:yellow;
+}
+.green  {
+  color:green;
+}
+.blue {
+  color:blue;
+}
+.selected {
   color:white;
 }
 @media(max-width:600px){
