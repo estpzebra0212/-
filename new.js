@@ -14,6 +14,10 @@ var Acolor = {
       ya[ga].style.color = color;
       ga = ga + 1;
     }
+  },
+  selectedcolor:function(color){
+    document.querySelector('.selected a').style.color = color;
+    document.querySelector('.selected').style.color = color;
   }
 };
 var body = {
@@ -36,6 +40,7 @@ function devil(self){
 if(self.value === '야간모드'){
   Acolor.h1aColor('white');
   Acolor.paColor('white');
+  Acolor.selectedcolor('#2E2E2E');
 
   body.color('white');
   body.backgroundColor('#2E2E2E');
@@ -46,6 +51,7 @@ if(self.value === '야간모드'){
 } else {
   Acolor.h1aColor('black');
   Acolor.paColor('black');
+  Acolor.selectedcolor('white');
 
   body.color('black');
   body.backgroundColor('white');
@@ -53,4 +59,4 @@ if(self.value === '야간모드'){
   bordercolor.h1('black');
   self.value = '야간모드';
 }
-}
+};
