@@ -4,71 +4,7 @@
     <title>정유찬에 대하여</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="new.css">
-    <script>
-    var Acolor = {
-      h1aColor: function(color){
-        var da = document.querySelectorAll('h1 a');
-        var rk = 0;
-        while(rk < da.length ){
-          da[rk].style.color = color;
-          rk = rk + 1;
-        }
-      },
-      paColor:function(color){
-        var ya = document.querySelectorAll('p a');
-        var ga = 0;
-        while(ga < ya.length ){
-          ya[ga].style.color = color;
-          ga = ga + 1;
-        }
-      }
-    };
-    var body = {
-      backgroundColor:function(color){
-        document.querySelector('body').style.backgroundColor = color;
-      },
-      color:function(color){
-        document.querySelector('body').style.color = color;
-      }
-    };
-    var bordercolor = {
-      ol:function(color){
-        document.querySelector('#grid ol').style.borderColor = color;
-      },
-      h1:function(color){
-        document.querySelector('h1').style.borderColor = color;
-      }
-    }
-    function devil(self){
-    if(self.value === '야간모드'){
-      Acolor.h1aColor('white');
-      Acolor.paColor('white');
-
-      body.color('white');
-      body.backgroundColor('#2E2E2E');
-      bordercolor.ol('white');
-      bordercolor.h1('white');
-      self.value = '기본모드';
-
-    } else {
-      Acolor.h1aColor('black');
-      Acolor.paColor('black');
-
-      body.color('black');
-      body.backgroundColor('white');
-      bordercolor.ol('black');
-      bordercolor.h1('black');
-      self.value = '야간모드';
-    }
-    }
-    function joke(){
-    var hihi = 50;
-    while(hihi>-10){
-      alert('아ㅋㅋ 누르지말라니깐ㅋㅋ, ' +hihi+ '번 남음');
-      hihi = hihi - 1;
-    }
-    alert('이 화면을 캡처해서 나한테 인증시 각종 상품 증정');
-    };
+    <script src="new.js">
   </script>
   </head>
   <body>
@@ -76,12 +12,14 @@
       <small id="nono">미완성</small></h1>
   <div id="grid">
     <ol>
-      <li class="red"><a href="5.html" class="red">그의 생애</a></li>
-      <li class="orange"><a href="1.html" class="orange">그의 키</a></li>
-      <li class="yellow"><a href="2.html" class="yellow">그의 몸무게</a></li>
-      <li class="green"><a href="3.html" class="green">그의 특기</a></li>
-      <li class="blue"><a href="6.html" class="blue">그의 취미 </a></li>
-      <li class="pupple"><a href="4.html" class="pupple">그의 코딩</a></li>
+      <script>
+      write('<li class="red"><a href="5.html" class="red">'+list1+'</a></li>');
+      write('<li class="orange"><a href="1.html" class="orange">'+list2+'</a></li>');
+      write('<li class="yellow"><a href="2.html" class="yellow">'+list3+'</a></li>');
+      write('<li class="green"><a href="3.html" class="green">'+list4+'</a></li>');
+      write('<li class="blue"><a href="6.html" class="blue">'+list5+ '</a></li>');
+      write('<li class="pupple"><a href="4.html" class="pupple">'+list6+'</a></li>');
+    </script>
     </ol>
     <div id="dd">
       <p>

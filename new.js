@@ -1,3 +1,12 @@
+function write(content){
+  document.write(content);
+}
+var list1 = '그의 생애';
+var list2 = '그의 키';
+var list3 = '그의 몸무게';
+var list4 = '그의 특기';
+var list5 = '그의 취미';
+var list6 = '그의 코딩';
 var Acolor = {
   h1aColor: function(color){
     var da = document.querySelectorAll('h1 a');
@@ -60,3 +69,15 @@ if(self.value === '야간모드'){
   self.value = '야간모드';
 }
 };
+function joke(){
+        for(let i = 212; i > -10; i--){
+          alert('아ㅋㅋ누르지마라니깐ㅋㅋ, 0' +i+ '번 확인 누르셈' );
+        };
+          alert('당신은 인내심있다! 캡처 후 인증시 상품증정!' );
+      };
+var list1 = '그의 생애';
+var list2 = '그의 키';
+var list3 = '그의 몸무게';
+var list4 = '그의 특기';
+var list5 = '그의 취미';
+var list6 = '기타';
