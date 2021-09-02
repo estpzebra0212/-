@@ -26,40 +26,47 @@
       그는 <strong>2021년 8월 19일</strong>부터  코딩을 시작했다.
     </p>
     <br><br>
-    <h3>당신은 정유찬에 대해 얼마나 알고있는가?</h3>
+    <script>
+    let colori1 = ['핑크','핑크색'];
+    let foodi1 = ['메밀 소바','메밀소바'];
+    let bloodi1 = ['A','A형'];
+    let handsomei1 = ['1번','1'];
+    </script>
+    <h3>당신은 정유찬에 대해 얼마나 알고있는가?<small>(아이폰미지원)</small></h3>
     <input type="button" value="문제풀기(5문제)" onclick="
     let birth = prompt('1.정유찬의 생일은?','YYYYMMDD');
     if(birth == 20070212){
       alert('정답입니다~~!');
-      let colori = prompt('2.정유찬이 좋아하는 색은?','OO색');
-      if(colori == '핑크색'){
+      let colori = prompt('2.정유찬이 좋아하는 색은?','');
+      if(colori1.includes(colori) == true){
         alert('정답입니다~~!');
         let foodi = prompt('3.정유찬이 좋아하는 음식은?','힌트:의령');
-        if(foodi == '메밀소바'){
+        if(foodi1.includes(foodi) == true){
           alert('정답입니다~~!');
-          let bloodi = prompt('4.정유찬의 혈액형은?','(알파벳 대문자)형');
-          if(bloodi == 'A형'){
+          let bloodi = prompt('4.정유찬의 혈액형은?','정답 형식: 알파벳 대문자');
+          if(bloodi1.includes(bloodi) == true){
             alert('정답입니다~~!');
-            let handsomei = prompt('정유찬은? 1번.잘생기고 착하다. 2번.못생기고 성질도 더럽다.','O번');
-            if( handsomei == '1번' ){
+            let handsomei = prompt('5.정유찬은? 1번.잘생기고 착하다. 2번.못생기고 성질도 더럽다.','정답 형식: O번');
+            if( handsomei1.includes(handsomei) == true ){
               alert('정답입니다~~!');
               alert('당신은 정유찬에 대해 아주 잘 알고 있다! 캡처 후 인증시 상품 증정!');
+              } else {
+                alert('정유찬은 안 못생겼고, 성질도 더럽지 않습니다!!')
+              };
             } else {
               alert('틀리다니..실망이다')
-            }
+            };
           } else {
             alert('틀리다니..실망이다')
-          }
+          };
         } else {
           alert('틀리다니..실망이다')
-        }
+        };
       } else {
         alert('틀리다니..실망이다')
       };
-    } else {
-      alert('틀리다니..실망이다')
-    };
     ">
+
     <p class="night">
       <input type="button" value="야간모드" onclick="
       devil(this)
