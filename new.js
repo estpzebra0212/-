@@ -1,6 +1,7 @@
 function write(content){
   document.write(content);
 };
+
 var Acolor = {
   h1aColor: function(color){
     var da = document.querySelectorAll('h1 a');

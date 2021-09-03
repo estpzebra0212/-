@@ -3,6 +3,8 @@
   <head>
     <title>정유찬에 대하여</title>
     <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact from example">
     <link rel="stylesheet" href="new.css">
     <script src="new.js"></script>
   </head>
@@ -26,46 +28,80 @@
       그는 <strong>2021년 8월 19일</strong>부터  코딩을 시작했다.
     </p>
     <br><br>
+    <h3>당신은 정유찬에 대해 얼마나 알고있는가?</h3>
     <script>
-    let colori1 = ['핑크','핑크색'];
-    let foodi1 = ['메밀 소바','메밀소바'];
-    let bloodi1 = ['A','A형'];
-    let handsomei1 = ['1번','1'];
+    function quest1(){
+      document.querySelector('#quest').innerHTML = quest1_1;
+    };
+    let quest1_1 = '정유찬의 생일은 ?? <br> <input type="date" id="ecli" value="2000-01-01"> <input type ="button" value="확인" onclick="quest1_2()">'
+    function quest1_2(){
+      let bday = document.querySelector('#ecli').value;
+      if(bday == '2007-02-12'){
+        alert('정답입니다~~!!');
+        quest2();
+      }else {
+        alert('솔직히 이건 맞춰야지..');
+        window.location.reload();
+      }
+    };
+
+    function quest2(){
+      document.querySelector('#quest').innerHTML = quest2_1;
+    };
+    let quest2_1 = '정유찬의 혈액형은?? <br><br> <input type="button" value="A" onclick="quest2_3()"> <input type="button" value="B" onclick="quest2_2()"> <input type="button" value="O" onclick="quest2_2()"> <input type="button" value="AB" onclick="quest2_2()">'
+    function ques2_2(){
+      alert('틀리다니 실망이다..ㅜ')
+      window.location.reload();
+    };
+    function quest2_3(){
+      alert('정답입니다!~!!');
+      quest3()
+    };
+
+    function quest3(){
+      document.querySelector('#quest').innerHTML = quest3_1;
+    };
+    let quest3_1 = '정유찬이 좋아하는 음식은?? <br><br> <input type="button" value="1.치킨" onclick="quest3_2()"> <input type="button" value="2.파스타" onclick="quest3_2()"> <input type="button" value="3.라면" onclick="quest3_2()"> <input type="button" value="4.소바" onclick="quest3_3()"> <input type="button" value="5.초밥" onclick="quest3_2()">'
+    function quest3_2(){
+      alert('틀리다니 실망이다..ㅜ')
+      window.location.reload();
+    };
+    function quest3_3(){
+      alert('정답입니다!~!!');
+      quest4()
+    };
+
+    function quest4(){
+      document.querySelector('#quest').innerHTML = quest4_1;
+    };
+    let quest4_1 = '정유찬이 좋아하는 색깔은?? <br> <input type="text" id="pse"> <input type="button" value="확인" onclick="quest4_2()">'
+    var colori1 = ['핑크', '핑크색'];
+    function quest4_2(){
+      let colori = document.querySelector('#pse').value;
+      if( colori1.includes(colori) == true){
+        alert('정답입니다~~!!');
+        quest5();
+      }else {
+        alert('틀리다니 실망실망..');
+        window.location.reload();
+      }
+    };
+
+    function quest5(){
+      document.querySelector('#quest').innerHTML = quest5_1;
+    };
+    let quest5_1 = '정유찬은?? <br><br> <input type="button" value="1. 잘생김 성격도 따스함 이 시대 최고의 학생이자 누나들의 동생" onclick="quest5_3()"> <br> <input type="button" value="2. 못생기고 성질도 고약함 " onclick="quest5_2()">'
+    function ques5_2(){
+      alert('난 못생긴 적이 없다구~~!!')
+      window.location.reload();
+    };
+    function quest5_3(){
+      alert('정답입니다!~!!');
+      location.href="quest.html";
+    };
     </script>
-    <h3>당신은 정유찬에 대해 얼마나 알고있는가?<small>(아이폰미지원)</small></h3>
-    <input type="button" value="문제풀기(5문제)" onclick="
-    let birth = prompt('1.정유찬의 생일은?','YYYYMMDD');
-    if(birth == 20070212){
-      alert('정답입니다~~!');
-      let colori = prompt('2.정유찬이 좋아하는 색은?','');
-      if(colori1.includes(colori) == true){
-        alert('정답입니다~~!');
-        let foodi = prompt('3.정유찬이 좋아하는 음식은?','힌트:의령');
-        if(foodi1.includes(foodi) == true){
-          alert('정답입니다~~!');
-          let bloodi = prompt('4.정유찬의 혈액형은?','');
-          if(bloodi1.includes(bloodi) == true){
-            alert('정답입니다~~!');
-            let handsomei = prompt('5.정유찬은? 1번.잘생기고 착하다. 2번.못생기고 성질도 더럽다.','');
-            if( handsomei1.includes(handsomei) == true ){
-              alert('정답입니다~~!');
-              alert('당신은 정유찬에 대해 아주 잘 알고 있다! 캡처 후 인증시 상품 증정!');
-              } else {
-                alert('정유찬은 안 못생겼고, 성질도 더럽지 않습니다!!')
-              };
-            } else {
-              alert('틀리다니..실망이다')
-            };
-          } else {
-            alert('틀리다니..실망이다')
-          };
-        } else {
-          alert('틀리다니..실망이다')
-        };
-      } else {
-        alert('틀리다니..실망이다')
-      };
-    ">
+    <p id="quest">
+    <input type="button" value="문제풀기(5문제)" onclick="quest1()">
 
     <p class="night">
       <input type="button" value="야간모드" onclick="
