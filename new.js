@@ -68,7 +68,8 @@ function joke(){
         for(let i = 212; i > 0; i--){
           alert('아ㅋㅋ누르지마라니깐ㅋㅋ, 0' +i+ '번 확인 누르셈' );
         };
-          alert('당신은 인내심있다! 캡처 후 인증시 상품증정!' );
+          alert('당신은 매우 인내심있다! 상품증정(선착)');
+          location.href="gift.html";
       };
 var list1 = '그의 생애';
 var list2 = '그의 키';
